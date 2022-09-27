@@ -9,168 +9,201 @@
         <!-- Google Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Roboto:wght@100;300;500&family=Sacramento&display=swap" rel="stylesheet">
-        
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+
         <!-- Font Awesome Icons -->
         <script src="https://kit.fontawesome.com/ad692869dc.js" crossorigin="anonymous"></script>
         <!--CSS Stylesheet -->
         <link rel="stylesheet" href="css/style.css">
     </head>
-        
-        <body>
-       
-            <div class="hero-image">
-                <div id="header">
-                    <div class="logo">
-                        <h3>Olivia West | <span>Stylist</span></h3>
-                    </div>
-                    <!-- Menu Icon -->
-                    <div class="container" onClick="myFunction(this)">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
 
-                        <!-- Nav Menu Hidden on Mobile -->
-                        <div class="nav">
-                            <a href="#">Home</a>
-                            <a href="#">Services</a>
-                            <a href="#">FAQ</a>
-                            <a href="#">About</a>
-                            <a id="hire-me" href="#">Hire Me</a>
-                        </div>
-                    </div>
-                </div>
-                <video autoplay muted id="myVideo" width="100%" height="100%" controls>
-                    <source src="img/Woman Picking Out Clothes.mp4" type="video/mp4">
-                    Your browswer does not support the video tag.
-                </video>
+    <body>
 
-                <!--  Call To Action -->
-                <div class="action">
-                    <h4 class="action-title">Book Your FREE Style Consultation Now</h4>
-                    <button class="action-button">I NEED THIS!</button>
-                </div>
+
+        <header class="header">
+            <div class="logo">
+                <h3 class="logo__title">Olivia West | <span class="logo__title--span">Stylist</span></h3>
             </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#home">My Services</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#home">About Me</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#gallery">My Work</a></li>
+                </ul>
+            </nav>
+        
+            <div class="hero__text">
+                <h1 class="hero__title">
+                    Take the style quiz
+                </h1>
+                <button class="btn">Click Here</button>
+
+            </div>
+        </header>
+            
+       
+       
          
             <!-- Image Gallery of Past clients-->
 
-            <div class="gallery">
-                <h2 class="gallery-title">Say Hello To The New You</h2>
-                <div class="row-image-gallery">
-                    <div class="two-rows">
-                        <div class="row-1">
-                            <div class="img-1">
-                                <img  src="img/skeleton-peace-shirt-min.jpg" alt="gallery">
-                            </div>
-                            <div class="img-2">
-                                <img  src="img/brown-boots.jpg" alt="gallery">
-                            </div>
-                            <div class="img-3">
-                                <img  src="img/red-car.jpg" alt="gallery">
+            <section class="gallery" id="gallery">
+                <h2 class="section__title section__title--gallery">Say Hello To The New You</h2>
+                <p class="section__subtitle section__subtitle--gallery">Some of my past clients</p>
+                
+                <div class="clients">
 
-                            </div>
-                        </div>
-                        <div class="row-2">
-                            <div class="img-4">
-                                <img src="img/blue-outfit.jpg" alt="gallery">
-
-                            </div>
-                            <div class="img-5">
-                                <img src="img/cool-girl.jpg" alt="gallery">
-
-                            </div>
-                          
-                        </div>
-                    </div>
-                </div>     
-            </div>
-
-            <!-- How It Works Section -->
-            
-            <div class="process-section">
-                <div class="process-title">
-                    <h2 class="process-heading">How It Works</h2>
-                    <p class="process-description">
-                        Are you ready to feel more stylish and confident in your clothes? I'm here to help! 
-                        We have a simple, step-by-step process to help you achieve the style and look you dream of!
-                    </p>
+                <!-- Client image 1-->
+                <div class="client__item">
+                    <img src="img/brown-boots.jpg" class="client__img" alt="past client">
                 </div>
-                <div class="process-steps">
 
-                   <!-- Step one -->
-                    <div class="step-one-container">
-                        <div class="row-color-1"></div>
-                        <div class="step-one-box">
-                            <h3 class="step-title">
-                                Step One
+                <!-- Client image 2-->
+                <div class="client__item">
+                    <img src="img/blue-outfit.jpg" class="client__img" alt="past client">
+                </div>
+
+                <!-- Client image 3-->
+                <div class="client__item">
+                    <img src="img/cool-girl.jpg" class="client__img" alt="past client">
+                </div>
+
+               <!-- Client image 4-->
+               <div class="client__item">
+                <img src="img/pink-coat.jpg" class="client__img" alt="past client">
+               </div>
+
+                <!-- Client image 5-->
+                <div class="client__item">
+                    <img src="img/red-car.jpg" class="client__img" alt="past client">
+                </div>
+
+                <!-- Client image 6-->
+                <div class="client__item">
+                    <img src="img/pink-outfit.jpg" class="client__img" alt="past client">
+                </div>
+            </section>
+
+
+            <!-- My Services Section -->
+            
+            <section class="my-services" id="services">
+                <h2 class="section__title section__title--services">
+                    What I do
+                </h2>
+                <div class="services">
+                    <div class="service">
+                            <h3 class="service__title">
+                                The Assessment
                             </h3>
-                            <p class="step-description">
+                            <p class="service__subtitle">
                                 First you'll fill out a style questionaire to give Olivia (that's me!) an idea of
                                 both your current style and your dream style + get an idea of what your day to day
                                 lifestyle consists of. This will help me to make the best choices for you!
                             </p>
-                        </div>
-                    </div>
+                    </div> <!-- / service -->
 
-                    <!-- Step two -->
-                    <div class="step-two-container">
-                        <div class="row-color-2"></div>
-                        <div class="step-two-box">
-                            <h3 class="step-title">
-                                Step Two
+                    <div class="service">
+                            <h3 class="service__title">
+                                The Plan
                             </h3>
-                            <p class="step-description">
-                                Next you'll meet with Olivia for a FREE style consultation!
-                                This will either be in person or over a Zoom call and will 
-                                last about 30 minutes. We'll discuss your style questionaire
-                                and I'll get to know more about you and your style.
+                            <p class="service__subtitle">
+                                After the questinaire you'll meet with Olivia to discuss your goals 
+                                in more detail. After the meeting Olivia will put together a personalized
+                                style plan. It will include outfit ideas, links to stores
+                                with items from your ideas, and much more!
                             </p>
-                        </div>
-                    </div>
+                    </div> <!-- / service -->
 
-                    <!-- Step Three -->
-                    <div class="step-three-container">
-                        <div class="row-color-3"></div>
-                        <div class="step-three-box">
-                            <h3 class="step-title">
-                                Step Three
+                    <div class="service">
+                            <h3 class="service__title">
+                                The Box
                             </h3>
-                            <p class="step-description">
-                                After your meeting with Olivia she will write up a personalized
-                                "style plan" just for you! It will include outfit ideas, links to
-                                stores with items from your outfit ideas section and much more! 
-                                She will put together and send you your first style box with 5 items 
-                                she feels will meet your style goals. Shipping & returns are always free!
+                            <p class="service__subtitle">
+                                After reviewing the style plan, Olivia will ship you your first
+                                style box that will include items from the plan along with
+                                a full description on how to wear them and style them with
+                                the existing items you already have.
                             </p>
-                        </div>
-                    </div>
-
-                    <!-- Step Four -->
-                    <div class="step-four-container">
-                        <div class="row-color-4"></div>
-                        <div class="step-four-box">
-                            <h3 class="step-title">
-                                Step Four
-                            </h3>
-                            <p class="step-description">
-                                Once you receive your box you will chat with Olivia again to dicuss the 
-                                fit of the items, how to wear them, and get any questions you might have
-                                answered. She will find you up to 5 additional items if you need for free.
-                                Our goal is to give you the style of your dreams!
-                            </p>
-                        </div>
-                    </div>
-
+                    </div> <!-- / service -->
                 </div>
-            </div>
+
+                <!-- Call To Action Button -->
+                <div class="style-button">
+                    <button class="btn__style-quiz">Take the Style Quiz!</button>    
+                </div>
+            </section>
+            
+           
 
 
+            <!-- About Me Section -->
+            <section class="about-me" id="about">
+                <h2 class="section__title section__title--about">
+                    Who I am
+                </h2>
+                <p class="section__subtitle section__subtitle--about">
+                    Personal stylist based in TN
+                </p>
+                <div class="about-me__body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
 
+                <img class="about-me__img" src="img/olivia-west.jpg" alt="olivia leaning aginst a wall">
 
+            </section>
+
+            <!-- Footer Section -->
+            <footer class="footer">
+              <a href="mailto:hello@oliviawest.com" class="footer__link">hello@oliviawest.com</a>
+
+              <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/Rae1821">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://linkedin.com/racheladooley">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://behance.com">
+                        <i class="fa-brands fa-square-behance"></i>
+                    </a>
+                </li>
+              </ul>
+
+            </footer>
 
 
 
 
         <script src="main.js" async defer></script>
+
+        <!-- Load React -->
+        <!-- When deploying, replace "development.js" with "production.min.js" -->
+        <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+        <!-- Load our React component -->
+        <script src="action_form.js"></script>
     </body>
 </html>
