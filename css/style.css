@@ -143,7 +143,7 @@ h3 { font-size: var(--fs-h3) }
 
 .nav {
     position: fixed;
-    color: var(--clr-dark);
+    background: var(--clr-dark);
     color: var(--clr-light);
     top: 0;
     bottom: 0;
@@ -205,11 +205,6 @@ h3 { font-size: var(--fs-h3) }
 .nav__link:hover {
     color: var(--clr-accent);
 }
-
-
-
-
-
 
 .nav-open .hamburger {
     transform: rotate(.625turn);
@@ -513,10 +508,20 @@ h3 { font-size: var(--fs-h3) }
 }
 
 
+/**** Scroll To Top Button ***/
 
 
-
-
+.btn-to-top {
+    display: block;
+    position: fixed;
+    bottom: 1.25rem;
+    right: 2em;
+    border-radius: 50px;
+    padding: 1em 1.2em;
+    background-color: var(--clr-accent);
+    border: none;
+    box-shadow: var(--bs);
+}
 
 
 
