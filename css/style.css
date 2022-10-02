@@ -279,6 +279,49 @@ h3 { font-size: var(--fs-h3) }
     transform: scale(1.1);
 }
 
+/* Social Icon Bar */
+
+.icon-bar {
+    width: 10px;
+    position: fixed;
+    left: 0px;
+    top: 200px;
+    margin-right: 10px;
+}
+
+.icon-bar a {
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease;
+    color: var(--clr-accent);
+    padding: 7px;
+    font-size: 20px;
+}
+
+.icon-bar a:hover {
+    opacity: 7;
+    transform:rotate(45deg) scale(1.2);
+}
+
+.icon-bar a:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: -3px;
+}
+
+.divider-line {
+    width: 1px;
+    height: 400px;
+    background: #D9ADAD;
+    margin-left: 15px;
+}
+
+@media (min-width: 800px) {
+    .icon-bar a {
+        font-size: 30px;
+    }
+}
+
+
 /* Past Client Image Gallery */
 
 .gallery {
@@ -307,7 +350,7 @@ h3 { font-size: var(--fs-h3) }
 
 .clients {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
      /* minmax means each grid has a min of 300px but if it needs to get larger it will */
 }
 
@@ -521,6 +564,10 @@ h3 { font-size: var(--fs-h3) }
     background-color: var(--clr-accent);
     border: none;
     box-shadow: var(--bs);
+}
+
+.btn-to-top:hover {
+    transform: scale(1.2);
 }
 
 
