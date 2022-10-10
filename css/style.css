@@ -267,6 +267,7 @@ a.nav__link:hover {
 .hero__title {
     font-family: var(--ff-primary);
     font-weight: var(--fw-semibold);
+    font-size: var(--fs-h2);
     margin-bottom: .5em;
 }
 
@@ -439,20 +440,21 @@ a.nav__link:hover {
     margin: 0;
 }
 
-.btn__style-quiz {
+.btn__style-quiz-bottom {
     background-color: var(--clr-accent);
+    color: var(--clr-dark);
     width: 20em;
     padding: 1em 5em;
     font-family: var(--ff-primary);
     font-weight: var(--fw-semibold);
     font-size: var(--fs-body);
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     border: none;
     border-radius: 10px;
 }
 
-.btn__style-quiz:hover {
+.btn__style-quiz-bottom:hover {
     transform: scale(1.1);
 }
 
