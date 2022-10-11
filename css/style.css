@@ -283,7 +283,7 @@ a.nav__link:hover {
     color: var(--clr-dark);
     border: none;
     cursor: pointer;
-    font-size: .8rem;
+    font-size: .5rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: var(--fw-bold);;
@@ -294,6 +294,11 @@ a.nav__link:hover {
     transform: scale(1.1);
 }
 
+@media (min-width: 800px) {
+    .btn__style-quiz-top {
+        font-size: 1em;
+    }
+} 
 
 
 /* Social Icon Bar */
