@@ -40,7 +40,7 @@
                 <h1 class="hero__title">
                     Take the <span class="span__style">Style</span> quiz
                 </h1>
-                <button class="btn__style-quiz-top">click here</button>
+                <button class="btn__style-quiz-top" id="btn__style-quiz-top">click here</button>
             </div>
             <!-- Floating sidebar social icons -->
             <div class="icon-bar">
@@ -52,7 +52,39 @@
             </div>
         </header>
             
-       
+        <!-- Modal Popup -->
+        <div class="modal" id="modal">
+            <div class="close-modal-btn-container">
+                <button class="modal-close-btn" id="modal-close-btn">X</button>
+            </div>
+            <div class="modal-inner" id="modal-inner">
+                <h2 class="form-title">Feel like you have nothing to wear?</h2>
+                    
+                <p class="modal-text" id="modal-text">
+                   I got you girl. Take this FREE style quiz to start your style journey today.
+                </p>
+                <form id="cookie-form">
+                    <input
+                        type="text"
+                        id="name"
+                        name="fullName"
+                        placeholder="Enter your full name"
+                        required
+                        >
+                        <input 
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+                        <div class="modal-submit-btn" id="modal-submit-button">
+                            <button type="submit" class="modal-btn">Submit</button>
+                        </div>
+                </form>
+
+            </div>
+
+        </div>
        
          
             <!-- Image Gallery of Past clients-->
@@ -135,7 +167,7 @@
 
                 <!-- Call To Action Button -->
                 <div class="style-button">
-                    <button class="btn__style-quiz-bottom">Take the Quiz!</button>    
+                    <button class="btn__style-quiz-bottom" id="btn__style-quiz-bottom">Take the Quiz!</button>    
                 </div>
             </section>
             
